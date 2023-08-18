@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+}
+
+.container .swiper {
+  margin: 1rem auto;
+  width: 70%;
+  position: unset;
+}
+
+.container .swiper-button-prev {
+  left: 6rem;
+  color: var(--black);
+}
+.container .swiper-button-next {
+  right: 6rem;
+  color: var(--black);
+}
+
+.container .swiper-slide {
+  height: 12rem;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+.swiper-slide:hover {
+  box-shadow: rgba(0, 0, 0, 0.512) 0px -50px 36px -28px inset;
+}
+.container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 1rem;
+}
+
+.left > :nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(65, 65, 65);
+}
+.left > :nth-child(2) {
+  color: rgb(142, 140, 140);
+}
+
+.left > :nth-child(3) {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.left button {
+  border: 1px solid black;
+  background: transparent;
+  width: fit-content;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.left button:hover {
+  border: 1px solid #fe956f;
+}
+
+.swiper-slide .right img {
+  position: absolute;
+  bottom: -30%;
+  right: -3%;
+  object-fit: cover;
+  transform: rotateZ(-20deg);
+}

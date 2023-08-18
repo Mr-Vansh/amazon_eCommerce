@@ -1,0 +1,97 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products {
+  width: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.products ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 20%;
+}
+
+.products ul li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.products ul li:hover {
+  color: #fe956f;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.list {
+  padding: 1rem;
+  max-height: 25rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 1rem;
+  overflow: scroll;
+}
+.list .product {
+  border-radius: 10px;
+  padding: 1rem;
+  height: 8rem;
+  border: 2px xloid black;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.product:hover {
+  box-shadow: rgba(0, 0, 0, 0.512) 0px -50px 36px -28px inset;
+}
+.product .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.left > :nth-child(1) {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(65, 65, 65);
+}
+.left > :nth-child(2) {
+  color: rgb(142, 140, 140);
+}
+
+.left > :nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.left button {
+  border: 1px solid black;
+  background: transparent;
+  width: fit-content;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.right img {
+  position: absolute;
+  bottom: -20%;
+  right: 0%;
+  object-fit: cover;
+  transform: rotateZ(-20deg);
+  overflow: hidden;
+}

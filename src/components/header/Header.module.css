@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.749);
+  color: #fff;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left span {
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 600;
+}
+.right ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.right ul li {
+  list-style: none;
+}
+.right li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fe956f;
+}
+.right input {
+  padding: 0.5rem 0.7rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}

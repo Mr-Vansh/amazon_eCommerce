@@ -1,0 +1,64 @@
+.container {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+.wrapper .left,
+.wrapper .right {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.left > :first-child,
+.right > :first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.left > :last-child,
+.right > :last-child {
+  font-size: 0.9rem;
+}
+
+.wrapper .middle {
+  text-align: center;
+  margin-left: 3rem;
+}
+.right {
+  text-align: end;
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carousel {
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.card .imageName {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* *************************************** */
+@media only screen and (max-width: 600px) {
+}
